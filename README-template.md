@@ -40,7 +40,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: (https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7/hub)
 - Live Site URL: [https://testimonials-grid-layout-cards.netlify.app/]
 
 ## My process
