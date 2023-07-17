@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+:root{
+    --font-style: 'Barlow Semi Condensed', sans-serif;
+    --fw-regular:500;
+    --fw-bold:600;
+
+    --daniel-card-background-color:hsl(263, 55%, 52%);
+    --jonathan-card-background-color:hsl(217, 19%, 35%);
+    --patrick-card-background-color:hsl(219, 29%, 14%);
+    --janette-kira-background-color:hsl(0, 0%, 100%);
+
+    --text-color-1:hsl(210, 46%, 95%);
+    --text-color-2:hsl(0, 0%, 81%);
+}
+
+*, *::before, *::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+*{
+    font:inherit;
+}
+
+body{
+    background-color: var(--text-color-1);
+    padding: 2rem 4rem 2rem 4rem;
+}
+
+main{
+    margin: 0rem auto;
+    max-width: 97%;
+    transform: scale(0.9);
+}
+
+.overall-flexbox-layout-block-last-column{
+    display: grid;
+    justify-content: center;
+    grid-template-columns:3.1fr 0.94fr;
+    column-gap: 2rem;
+    /* flex-direction: column; */
+}
+.two-block-grids-stack{
+    display: grid;
+    row-gap: 2rem;
+}
+
+.first-block-grid{
+    display: grid;
+    grid-template-columns:2fr 0.95fr;
+    column-gap: 2rem;
+
+}
+
+.second-block-grid{
+    display: grid;
+    grid-template-columns: 0.95fr 2fr;
+    column-gap: 2rem;
+}
+
+.card-layout{
+    border-radius: 0.5rem;
+    padding: 1.5rem 2.5rem 1.3rem 2.5rem;
+}
+
+.daniel-card{
+    background-color: var(--daniel-card-background-color);
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-size: 125px;
+    background-position: top right 7rem;
+}
+
+.Jonathan-card{
+    background-color: var(--jonathan-card-background-color);
+}
+
+.Jeanette-card{
+    background-color: var(--janette-kira-background-color);
+    box-shadow: 0px 10px  20px rgba(90, 91, 149, 0.35);
+}
+
+.Patrick-card{
+    background-color: var(--patrick-card-background-color);
+}
+
+.kira-card{
+    background-color: var(--janette-kira-background-color);
+    box-shadow: 0px 10px  20px rgba(90, 91, 149, 0.35);
+}
+
+.profile-verified-graduate{
+    display: inline-flex;
+    padding: 0.5rem 0.5rem 0.5rem 0rem;
+    place-items: center;
+    align-items: right;
+    line-height: 1.15rem;
+    /* background-color: red; */
+    
+}
+
+.img-style{
+    border-radius: 50%;
+    width: 2.3rem;
+    height: 2.3rem;
+    margin-right: 1.2rem;
+}
+
+.daniel-img-style{
+    border: 2.6px solid hsla(0, 0%, 81% , 0.5);
+}
+
+.patrick-img-style{
+    border: 2.6px solid var(--daniel-card-background-color);
+
+}
+
+.profile-name{
+    color: var(--text-color-2);
+    font-family: var(--font-style);
+    font-weight: var(--fw-regular);
+
+}
+
+.profile-verify{
+    color:var(--text-color-2);
+    opacity: 0.5;
+    font-family: var(--font-style);
+    font-size: 0.85rem;
+    font-weight: var(--fw-regular);
+}
+
+.bold-testimonials-paragragph{
+    color: var(--text-color-1);
+    font-size: 1.45rem;
+    font-weight: var(--fw-bold);
+    font-family: var(--font-style);
+    margin-top:0.8rem;
+    margin-bottom:1rem;
+}
+
+blockquote{
+    color: var(--text-color-2);
+    opacity: 0.5;
+    font-family: var(--font-style);
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+
+}
+.spacious{
+    margin-top: 1.5rem;
+}
+
+
+.diff-color{
+    color: var(--jonathan-card-background-color);
+
+}
+
+.attribution{
+    text-align: center;
+    margin: 0.5rem;
+    font-family: var(--font-style);
+    font-weight: var(--fw-bold);
+    color: var(--patrick-card-background-color);
+
+}
+
+.attribution a {
+    text-decoration: none;
+    color: var(--patrick-card-background-color);
+}
+.attribution a:active{
+    text-decoration: line-through;
+    text-decoration-color: var(--text-color-2);
+    border: 3px dashed var(--text-color-1);
+    color: var(--text-color-1);
+    transition: padding 0.3s;
+    border-radius: 1rem;
+    padding: 0.6rem;
+    background-color: var(--daniel-card-background-color);
+}
+.attribution a:hover{
+    text-decoration: line-through;
+    text-decoration-color: var(--text-color-2);
+    border: 3px dashed var(--text-color-1);
+    color: var(--text-color-1);
+    transition: padding 0.3s;
+    border-radius: 1rem;
+    padding: 0.6rem;
+    background-color: var(--daniel-card-background-color);
+}
+
+
+@media only screen and (max-width:420px){
+    body{
+        padding: 0.3em 1em 1em 1em;
+    }
+    main{
+        max-width: 95%;
+    }
+    .daniel-card{
+        background-position: top right 1.4em;
+        background-size: 120px;
+    }
+
+    .overall-flexbox-layout-block-last-column,
+    .first-block-grid, 
+    .second-block-grid{
+        display: flex;
+        flex-direction: column;
+        column-gap: 0em;
+        row-gap: 2em;
+    }
+    .bold-testimonials-paragragph{
+        font-size: 1.18em;
+    }
+    .card-layout{
+        padding: 1.5rem 2.5rem 1.5rem 2.5rem;
+    }
+    blockquote{
+        font-size: 0.91em;
+        font-weight:var(--fw-bold) ;
+    }
+
+    .attribution{
+        margin: 2em auto;
+    }
+
+}
+
+@media (min-width:420px) and (max-width:1439px){
+    body{
+        padding: 2em 1em 2em 1em;
+    }
+    main{
+        max-width: 95%;
+    }
+    .daniel-card{
+        background-position: top right 1.4em;
+        background-size: 120px;
+    }
+
+    .overall-flexbox-layout-block-last-column,
+    .first-block-grid, 
+    .second-block-grid{
+        display: flex;
+        flex-direction: column;
+        column-gap: 0em;
+        row-gap: 2em;
+    }
+    .bold-testimonials-paragragph{
+        font-size: 1.18em;
+    }
+    .card-layout{
+        padding: 1.5rem 2.5rem 1.5rem 2.5rem;
+    }
+    blockquote{
+        font-size: 0.91em;
+        font-weight:var(--fw-bold) ;
+    }
+
+    .attribution{
+        margin: 2em auto;
+    }
+
+}
+
